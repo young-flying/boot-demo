@@ -16,6 +16,8 @@ public class LearnResourceController {
         List<LearnResouce> learnList =new ArrayList<LearnResouce>();
         LearnResouce bean =new LearnResouce("百度","www.baidu.com","http://www.baidu.com");
         learnList.add(bean);
+        bean =new LearnResouce("阿里云","aliyun.com","http://aliyun.com");
+        learnList.add(bean);
         ModelAndView modelAndView = new ModelAndView("/index");
         modelAndView.addObject("learnList", learnList);
         return modelAndView;
